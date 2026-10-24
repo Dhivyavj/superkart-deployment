@@ -1,0 +1,69 @@
+{
+  "features": [
+    "Product_Weight",
+    "Product_Sugar_Content",
+    "Product_Allocated_Area",
+    "Product_MRP",
+    "Store_Size",
+    "Store_Location_City_Type",
+    "Store_Type",
+    "Product_Id_char",
+    "Store_Age_Years",
+    "Product_Type_Category"
+  ],
+  "numeric": [
+    "Product_Weight",
+    "Product_Allocated_Area",
+    "Product_MRP",
+    "Store_Age_Years"
+  ],
+  "categorical": [
+    "Product_Sugar_Content",
+    "Store_Size",
+    "Store_Location_City_Type",
+    "Store_Type",
+    "Product_Id_char",
+    "Product_Type_Category"
+  ],
+  "reference_year": 2026,
+  "selected_model": "Random Forest tuned",
+  "categories": {
+    "Product_Sugar_Content": [
+      "Low Sugar",
+      "No Sugar",
+      "Regular"
+    ],
+    "Store_Size": [
+      "High",
+      "Medium",
+      "Small"
+    ],
+    "Store_Location_City_Type": [
+      "Tier 1",
+      "Tier 2",
+      "Tier 3"
+    ],
+    "Store_Type": [
+      "Departmental Store",
+      "Food Mart",
+      "Supermarket Type1",
+      "Supermarket Type2"
+    ],
+    "Product_Id_char": [
+      "DR",
+      "FD",
+      "NC"
+    ],
+    "Product_Type_Category": [
+      "Non Perishables",
+      "Perishables"
+    ]
+  },
+  "test_metrics": {
+    "RMSE": 278.2527240690046,
+    "MAE": 114.35215922662357,
+    "R-squared": 0.9321444156400802,
+    "Adj. R-squared": 0.9317548887493803,
+    "MAPE": 0.040812007090698044
+  }
+}
